@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="ParkingLotWeb:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/ParkingLotWeb_war_exploded</output-path>
+    <root id="archive" name="ParkingLotWeb_war exploded.war">
+      <element id="javaee-facet-resources" facet="ParkingLotWeb/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="ParkingLotWeb" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="module" name="JUnit4" module-name="ParkingLotWeb" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/jstl.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/standard.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/c3p0-0.9.2-pre1.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/commons-dbutils-1.2.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/mchange-commons-0.2.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-5.0.8-bin.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

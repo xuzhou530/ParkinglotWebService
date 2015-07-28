@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <!--++++++Servlet+++++++-->
+    <servlet>
+        <servlet-name>ServiceServlet</servlet-name>
+        <servlet-class>ws.parkingLotService.servlet.ServiceServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServiceServlet</servlet-name>
+        <url-pattern>/open.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ListUserServlet</servlet-name>
+        <servlet-class>ws.parkingLotService.servlet.ListUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListUserServlet</servlet-name>
+        <url-pattern>/listUsers.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PayServlet</servlet-name>
+        <servlet-class>ws.parkingLotService.servlet.PayServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PayServlet</servlet-name>
+        <url-pattern>/pay.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>indexServlet</servlet-name>
+        <servlet-class>ws.parkingLotService.servlet.indexServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>indexServlet</servlet-name>
+        <url-pattern>/index.do</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>SHTServlet</servlet-name>
+        <servlet-class>ws.parkingLotService.servlet.SHTServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SHTServlet</servlet-name>
+        <url-pattern>/chart.do</url-pattern>
+    </servlet-mapping>
+
+
+    <!--++++++JSP+++++++-->
+    <welcome-file-list>
+        <welcome-file>/index.do</welcome-file>
+    </welcome-file-list>
+
+    <error-page>
+        <error-code>400</error-code>
+        <location>/index.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>403</error-code>
+        <location>/403.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>404</error-code>
+        <location>/404.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>500</error-code>
+        <location>/error.jsp</location>
+    </error-page>
+
+
+</web-app>
